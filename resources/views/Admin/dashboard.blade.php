@@ -9,14 +9,6 @@
                 <h2 class="text-2xl font-bold mb-2">Selamat Datang, {{ Auth::user()->name }}! 👋</h2>
                 <p class="text-green-100">Panel Admin Qurban Masjid Al-Abror - Kelola data qurban dengan mudah</p>
             </div>
-            <div class="hidden md:block">
-                <svg class="w-24 h-24 text-white/20" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                        d="M12 2C12 2 8 6 8 10C8 12.21 9.79 14 12 14C14.21 14 16 12.21 16 10C16 6 12 2 12 2ZM12 12C10.9 12 10 11.1 10 10C10 8.14 11.03 6.36 12 5.04C12.97 6.36 14 8.14 14 10C14 11.1 13.1 12 12 12Z" />
-                    <path
-                        d="M4 22V14H6V22H4ZM18 22V14H20V22H18ZM2 14H22V16H2V14ZM7 22V18H9V22H7ZM15 22V18H17V22H15ZM11 22V17H13V22H11Z" />
-                </svg>
-            </div>
         </div>
     </div>
 
