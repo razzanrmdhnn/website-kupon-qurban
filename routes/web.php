@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\ManajemenAdminController;
+use App\Http\Controllers\Admin\KuponController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -12,6 +13,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
         return view('Admin.dashboard');
     })->name('dashboard');
+
+    // Kelola Kupon
+    Route::resource('kelola-kupon', KuponController::class)->only(['index', 'store', 'show', 'destroy'])->parameters(['kelola-kupon' => 'kupon']);
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

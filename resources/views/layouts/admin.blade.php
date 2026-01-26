@@ -53,15 +53,15 @@
                         <span class="font-medium">Dashboard</span>
                     </a>
 
-                    <!-- Tambah Kupon -->
-                    <a href="#"
-                        class="flex items-center px-4 py-2 text-white rounded-lg transition-all duration-200 hover:bg-white/10">
+                    <!-- Kelola Kupon -->
+                    <a href="{{ route('kelola-kupon.index') }}"
+                        class="flex items-center px-4 py-2 text-white rounded-lg transition-all duration-200 {{ request()->routeIs('kelola-kupon.*') ? 'bg-white/20 shadow-lg' : 'hover:bg-white/10' }}">
                         <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                         </svg>
-                        <span class="font-medium">Tambah Kupon</span>
+                        <span class="font-medium">Kelola Kupon</span>
                     </a>
 
                     <!-- Scan Kupon -->
