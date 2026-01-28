@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\ManajemenAdminController;
 use App\Http\Controllers\Admin\KuponController;
+use App\Http\Controllers\Admin\ScanKuponController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,6 +17,11 @@ Route::middleware(['auth'])->group(function () {
 
     // Kelola Kupon
     Route::resource('kelola-kupon', KuponController::class)->only(['index', 'store', 'show', 'destroy'])->parameters(['kelola-kupon' => 'kupon']);
+
+    // Scan Kupon
+    Route::get('/scan-kupon', [ScanKuponController::class, 'index'])->name('scan-kupon.index');
+    Route::post('/scan-kupon/check', [ScanKuponController::class, 'checkKupon'])->name('scan-kupon.check');
+    Route::post('/scan-kupon/use', [ScanKuponController::class, 'useKupon'])->name('scan-kupon.use');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
