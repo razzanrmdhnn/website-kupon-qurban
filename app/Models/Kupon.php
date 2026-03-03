@@ -23,22 +23,20 @@ class Kupon extends Model
     ];
 
     /**
-     * Generate unique code untuk kupon
+     * Generate unique code untuk kupon (5 karakter alfanumerik random)
      */
     public static function generateKodeUnik(): string
     {
-        $year = date('Y');
-        $lastKupon = self::whereYear('created_at', $year)->orderBy('id', 'desc')->first();
+        $characters = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 
-        if ($lastKupon) {
-            // Extract number from last kode_unik
-            $lastNumber = (int) substr($lastKupon->kode_unik, -3);
-            $newNumber = $lastNumber + 1;
-        } else {
-            $newNumber = 1;
-        }
+        do {
+            $kode = '';
+            for ($i = 0; $i < 5; $i++) {
+                $kode .= $characters[random_int(0, strlen($characters) - 1)];
+            }
+        } while (self::where('kode_unik', $kode)->exists());
 
-        return 'QRB-' . $year . '-' . str_pad($newNumber, 3, '0', STR_PAD_LEFT);
+        return $kode;
     }
 
     /**

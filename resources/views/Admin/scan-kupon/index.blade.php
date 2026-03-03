@@ -34,7 +34,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
-                                <p class="text-gray-600 font-medium">Mengaktifkan kamera...</p>
+                                <p class="text-gray-600 font-semibold">Mengaktifkan kamera...</p>
                                 <p class="text-gray-500 text-sm mt-1">Mohon tunggu sebentar</p>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <span id="successMessage" class="text-green-700 font-medium"></span>
+                                <span id="successMessage" class="text-green-700 font-semibold"></span>
                             </div>
                         </div>
 
@@ -83,7 +83,7 @@
                                         d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <span id="errorMessage" class="text-red-700 font-medium"></span>
+                                <span id="errorMessage" class="text-red-700 font-semibold"></span>
                             </div>
                         </div>
                     </div>
@@ -109,8 +109,8 @@
                                 <label for="kuponCode" class="block text-sm font-medium text-gray-700 mb-2">Kode Unik
                                     Kupon</label>
                                 <input type="text" id="kuponCode" name="kupon_code"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 text-lg text-center font-mono uppercase bg-white"
-                                    placeholder="Contoh: QRB-2026-001" required autocomplete="off">
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 text-lg text-center tracking-widest font-semibold uppercase bg-white"
+                                    placeholder="Contoh: H7K2M" required autocomplete="off">
                                 <p class="mt-1 text-xs text-gray-500">Kode unik terdapat pada kupon qurban</p>
                             </div>
 
@@ -330,7 +330,7 @@
 
                     let html = '<div class="bg-gray-50 rounded-lg p-4 space-y-3">';
                     html +=
-                        '<div class="flex justify-between items-center"><span class="text-sm text-gray-600">Kode Kupon:</span><span class="text-sm font-semibold text-gray-900 font-mono">' +
+                        '<div class="flex justify-between items-center"><span class="text-sm text-gray-600">Kode Kupon:</span><span class="text-sm font-bold tracking-wide text-gray-800">' +
                         kupon.kode_unik + '</span></div>';
                     html +=
                         '<div class="flex justify-between items-center"><span class="text-sm text-gray-600">Nama:</span><span class="text-sm font-semibold text-gray-900">' +

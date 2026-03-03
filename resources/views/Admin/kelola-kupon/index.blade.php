@@ -21,7 +21,7 @@
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span class="font-medium">{{ session('success') }}</span>
+                <span class="font-semibold">{{ session('success') }}</span>
             </div>
         </div>
     @endif
@@ -125,8 +125,8 @@
                         <input type="text" name="search" placeholder="Ketik nama untuk mencari..."
                             value="{{ request('search') }}"
                             class="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all">
-                        <svg class="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
@@ -136,7 +136,8 @@
                 <!-- Filter RT -->
                 <div class="md:col-span-3">
                     <label class="block text-sm font-medium text-gray-700 mb-2">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -163,7 +164,8 @@
                         </svg>
                         <svg class="w-4 h-4 text-gray-400 absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
                 </div>
@@ -171,7 +173,8 @@
                 <!-- Filter Status -->
                 <div class="md:col-span-3">
                     <label class="block text-sm font-medium text-gray-700 mb-2">
-                        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
@@ -193,7 +196,8 @@
                         </svg>
                         <svg class="w-4 h-4 text-gray-400 absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
                 </div>
@@ -231,7 +235,8 @@
                     <div class="flex items-center gap-2 flex-wrap">
                         <span class="text-sm font-medium text-gray-600">Filter Aktif:</span>
                         @if (request('search'))
-                            <span class="inline-flex items-center gap-1 px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">
+                            <span
+                                class="inline-flex items-center gap-1 px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -240,7 +245,8 @@
                             </span>
                         @endif
                         @if (request('rt'))
-                            <span class="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
+                            <span
+                                class="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -251,7 +257,8 @@
                             </span>
                         @endif
                         @if (request('status'))
-                            <span class="inline-flex items-center gap-1 px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">
+                            <span
+                                class="inline-flex items-center gap-1 px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -287,9 +294,9 @@
                             <td class="px-6 py-4 text-sm text-gray-700">{{ $kupons->firstItem() + $index }}</td>
                             <td class="px-6 py-4">
                                 <span
-                                    class="font-mono text-sm bg-gray-100 px-3 py-1 rounded-lg text-gray-800">{{ $kupon->kode_unik }}</span>
+                                    class="text-sm font-semibold tracking-wide bg-green-50 text-green-700 px-3 py-1 rounded-lg border border-green-200">{{ $kupon->kode_unik }}</span>
                             </td>
-                            <td class="px-6 py-4 text-sm font-medium text-gray-800">{{ $kupon->nama }}</td>
+                            <td class="px-6 py-4 text-sm font-semibold text-gray-700">{{ $kupon->nama }}</td>
                             <td class="px-6 py-4">
                                 <span
                                     class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">{{ $kupon->formatted_rt }}</span>
@@ -328,7 +335,8 @@
                                                 d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                                         </svg>
                                     </button>
-                                    <button onclick="showDeleteConfirmation({{ $kupon->id }}, '{{ $kupon->kode_unik }}')"
+                                    <button
+                                        onclick="showDeleteConfirmation({{ $kupon->id }}, '{{ $kupon->kode_unik }}')"
                                         class="p-2 text-red-600 hover:bg-red-100 rounded-lg transition-colors"
                                         title="Hapus">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor"
@@ -337,7 +345,9 @@
                                                 d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                         </svg>
                                     </button>
-                                    <form id="deleteForm{{ $kupon->id }}" action="{{ route('kelola-kupon.destroy', $kupon) }}" method="POST" class="hidden">
+                                    <form id="deleteForm{{ $kupon->id }}"
+                                        action="{{ route('kelola-kupon.destroy', $kupon) }}" method="POST"
+                                        class="hidden">
                                         @csrf
                                         @method('DELETE')
                                     </form>
@@ -353,7 +363,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
                                     </svg>
-                                    <p class="text-gray-500 text-lg font-medium">Belum ada kupon</p>
+                                    <p class="text-gray-500 text-lg font-semibold">Belum ada kupon</p>
                                     <p class="text-gray-400 text-sm">Klik tombol "Tambah Kupon" untuk menambahkan kupon
                                         baru</p>
                                 </div>
@@ -374,7 +384,8 @@
 
     <!-- Hidden Delete Forms -->
     @foreach ($kupons as $kupon)
-        <form id="deleteForm{{ $kupon->id }}" action="{{ route('kelola-kupon.destroy', $kupon) }}" method="POST" style="display: none;">
+        <form id="deleteForm{{ $kupon->id }}" action="{{ route('kelola-kupon.destroy', $kupon) }}"
+            method="POST" style="display: none;">
             @csrf
             @method('DELETE')
         </form>
@@ -461,11 +472,11 @@
                         <!-- Buttons -->
                         <div class="flex gap-3">
                             <button type="button" onclick="closeModal()"
-                                class="flex-1 px-4 py-3 border border-gray-300 text-gray-700 rounded-xl font-medium hover:bg-gray-50 transition-colors">
+                                class="flex-1 px-4 py-3 border border-gray-300 text-gray-700 rounded-xl font-semibold hover:bg-gray-50 transition-colors">
                                 Batal
                             </button>
                             <button type="submit"
-                                class="flex-1 px-4 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl font-medium hover:from-green-600 hover:to-emerald-700 transition-colors flex items-center justify-center gap-2">
+                                class="flex-1 px-4 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl font-semibold hover:from-green-600 hover:to-emerald-700 transition-colors flex items-center justify-center gap-2">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -505,7 +516,7 @@
                     <div id="qrCodeContainer" class="bg-white p-4 rounded-xl border-2 border-gray-200 mb-4">
                         <!-- QR Code will be injected here -->
                     </div>
-                    <p id="qrCodeLabel" class="text-lg font-mono font-bold text-gray-800"></p>
+                    <p id="qrCodeLabel" class="text-lg font-bold tracking-wide text-gray-700"></p>
                 </div>
             </div>
         </div>
@@ -553,7 +564,8 @@
                 <div class="bg-gradient-to-r from-red-500 to-red-600 rounded-t-2xl px-6 py-4">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-2">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                             </svg>
@@ -572,7 +584,8 @@
                 <div class="p-6">
                     <div class="flex flex-col items-center text-center mb-6">
                         <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
-                            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                             </svg>
@@ -581,17 +594,19 @@
                         <p class="text-gray-600 mb-4">Apakah Anda yakin ingin menghapus kupon ini?</p>
                         <div class="bg-gray-50 rounded-lg p-3 w-full">
                             <p class="text-sm text-gray-500 mb-1">Kode Kupon</p>
-                            <p id="deleteKuponCode" class="font-mono font-bold text-gray-800"></p>
+                            <p id="deleteKuponCode" class="font-bold tracking-wide text-gray-700"></p>
                         </div>
                     </div>
 
                     <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 mb-6">
                         <div class="flex gap-2">
-                            <svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                             </svg>
-                            <p class="text-sm text-amber-800">Tindakan ini tidak dapat dibatalkan. Data kupon akan dihapus secara permanen.</p>
+                            <p class="text-sm text-amber-800">Tindakan ini tidak dapat dibatalkan. Data kupon akan
+                                dihapus secara permanen.</p>
                         </div>
                     </div>
 
@@ -617,7 +632,22 @@
 
     <!-- JavaScript for Modal -->
     <script>
+        let isSubmitting = false;
+
         function openModal() {
+            // Reset submission guard setiap kali modal dibuka
+            isSubmitting = false;
+            const submitBtn = document.querySelector('#formTambahKupon button[type="submit"]');
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = `
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+                Generate Kupon
+            `;
+            submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+
             document.getElementById('modalTambahKupon').classList.remove('hidden');
             document.body.style.overflow = 'hidden';
         }
@@ -626,7 +656,38 @@
             document.getElementById('modalTambahKupon').classList.add('hidden');
             document.body.style.overflow = 'auto';
             document.getElementById('formTambahKupon').reset();
+            // Reset submission guard saat modal ditutup
+            isSubmitting = false;
+            const submitBtn = document.querySelector('#formTambahKupon button[type="submit"]');
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = `
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+                Generate Kupon
+            `;
+            submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
         }
+
+        // Prevent multiple form submissions
+        document.getElementById('formTambahKupon').addEventListener('submit', function(e) {
+            if (isSubmitting) {
+                e.preventDefault();
+                return false;
+            }
+            isSubmitting = true;
+            const submitBtn = this.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            submitBtn.innerHTML = `
+                <svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                </svg>
+                Memproses...
+            `;
+        });
 
         function showQrCode(kuponId, kodeUnik) {
             fetch(`/kelola-kupon/${kuponId}`)
@@ -657,12 +718,12 @@
                             <div class="bg-white p-4 rounded-xl border-2 border-gray-200 mb-4 qr-container">
                                 ${kupon.qr_code}
                             </div>
-                            <p class="text-xl font-mono font-bold text-gray-800">${kupon.kode_unik}</p>
+                            <p class="text-xl font-bold tracking-wide text-gray-700">${kupon.kode_unik}</p>
                         </div>
                         <div class="space-y-4">
                             <div class="flex justify-between items-center py-2 border-b border-gray-100">
                                 <span class="text-gray-500">Nama</span>
-                                <span class="font-medium text-gray-800">${kupon.nama}</span>
+                                <span class="font-semibold text-gray-700">${kupon.nama}</span>
                             </div>
                             <div class="flex justify-between items-center py-2 border-b border-gray-100">
                                 <span class="text-gray-500">RT</span>
